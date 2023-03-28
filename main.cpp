@@ -5,11 +5,11 @@ int main()
 {
     /*
     gasDetector(D2) es un constructor por parametro que devuelve un objeto del tipo DigitalIn
-    esde embeb
+    desde embeb
     la clase DigitalIn crea un gpio() y luego lo inicializa con el pin D2
     esto llama a un metodo de gpip que inicializa el pin con los abjetos PinName y PinMode
     y lo configura como entrada
-    esto intermamente si el pin no estaa en unso busca el puerto asociado al pin y 
+    esto intermamente si el pin no esta en unso busca el puerto asociado al pin y 
     te lo configura como entrada
     stm se encarga de poner los valores del pin y de encontrar a que puerto esta asociado(en este caso esta en el puerto F)
 */
@@ -28,7 +28,7 @@ int main()
     se encarga de que no ocurra una itrerrupcion cuando va a habilitar el pulldown
     cueando es seguro llama a la funcion gpio_mode le pasa el pin y le pasa pull
     gpio_mode busca al pin y le cambia el modo
-    luego llama a la funcion deabajo para volver a actibar interrrupciones y 
+    luego llama a la funcion deabajo para volver a activar interrrupciones y 
     dejarlo en el estado antes de llamar a este metodo
 
 */
@@ -45,7 +45,7 @@ int main()
         
         if ( gasDetector == OFF ) {
             alarmLed = OFF;
-            printf("Se apago la alarma");
+            printf("Se apago la alarma\n");
         }
     }
 }
